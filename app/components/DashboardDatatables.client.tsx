@@ -14,18 +14,18 @@ import "datatables.net-colreorder-dt/css/colReorder.dataTables.css";
 import "survey-analytics/survey.analytics.datatables.css";
 
 export default function DashboardDatatables() {
-  let [vizPanel, setVizPanel] = useState<DataTables>();
+  let [table, setDatatables] = useState<DataTables>();
 
-  if (!vizPanel) {
+  if (!table) {
     DataTables.initJQuery($);
     const survey = new Model(json);
-    vizPanel = new DataTables(survey, data);
-    setVizPanel(vizPanel);
+    table = new DataTables(survey, data);
+    setDatatables(table);
   }
 
   useEffect(() => {
-    vizPanel?.render("summaryContainer");
-  }, [vizPanel]);
+    table?.render("summaryContainer");
+  }, [table]);
 
   return <div style={{ height: "80vh", width: "100%" }} id="summaryContainer"></div>;
 }
