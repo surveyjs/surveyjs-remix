@@ -5,8 +5,8 @@ import SurveyComponent from "../components/Survey.js";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Survey" },
+    { title: "Form Library | SurveyJS + NextJS Quickstart Template" },
+    { name: "description", content: "SurveyJS Form Library" },
   ];
 };
 

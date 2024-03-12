@@ -5,8 +5,8 @@ import DashboardTabulator from "../components/DashboardTabulator.client";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Results Table" },
+    { title: "Tabulator | SurveyJS + NextJS Quickstart Template" },
+    { name: "description", content: "SurveyJS Tabulator" },
   ];
 };
 

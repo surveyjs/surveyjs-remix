@@ -5,8 +5,8 @@ import Dashboard from "../components/Dashboard.client";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Dashboard" },
+    { title: "Dashboard | SurveyJS + NextJS Quickstart Template" },
+    { name: "description", content: "SurveyJS Dashboard" },
   ];
 };
 

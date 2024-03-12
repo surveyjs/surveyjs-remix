@@ -5,8 +5,8 @@ import DashboardDatatables from "../components/DashboardDatatables.client";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Results Table (IE Support)" },
+    { title: "Datatables (IE Support) | SurveyJS + NextJS Quickstart Template" },
+    { name: "description", content: "SurveyJS Datatables (IE Support)" },
   ];
 };
 

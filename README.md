@@ -1,38 +1,41 @@
-# Welcome to Remix!
+# SurveyJS + Remix Quickstart Template 
 
-- [Remix Docs](https://remix.run/docs)
+SurveyJS is a set of JavaScript components that allow you and your users to build surveys / forms, store them in your database, and visualize survey results for data analysis. This quick start template uses [Remix](https://remix.run/) and the following SurveyJS components:
 
-## Development
+- [SurveyJS Form Library](https://surveyjs.io/form-library/documentation/overview)
+- [Survey Creator / Form Builder](https://surveyjs.io/survey-creator/documentation/overview)
+- [SurveyJS PDF Generator](https://surveyjs.io/pdf-generator/documentation/overview)
+- [SurveyJS Dashboard](https://surveyjs.io/dashboard/documentation/overview)
 
-From your terminal:
+## Run the application
 
-```sh
+```bash
+git clone https://github.com/surveyjs/surveyjs-nextjs.git
+cd surveyjs-remix
+npm i
 npm run dev
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
+Open http://localhost:3000/ in your web browser.
 
-## Deployment
+## Template structure
 
-First, build your app for production:
+This template covers most basic use cases. You can find code examples for them in the following files:
 
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
+- Create a standalone survey
+  - [data/survey_json.js](data/survey_json.js)
+  - [app/components/Survey.tsx](app/components/Survey.tsx)
+- Add Survey Creator to a page
+  - [app/components/SurveyCreator.tsx](app/components/SurveyCreator.tsx)
+- Export a survey to a PDF document
+  - [app/routes/pdf-export.tsx](app/routes/pdf-export.tsx)
+- Visualize survey results
+  - As charts
+    - [data/dashboard_data.js](data/dashboard_data.js)
+    - [app/components/Dashboard.client.tsx](app/components/Dashboard.client.tsx)
+  - As a table (modern browsers)
+    - [data/dashboard_data.js](data/dashboard_data.js)
+    - [app/components/DashboardTabulator.client.tsx](app/components/DashboardTabulator.client.tsx)
+  - As a table (old browsers)
+    - [data/dashboard_data.js](data/dashboard_data.js)
+    - [app/components/DashboardDatatables.client.tsx](app/components/DashboardDatatables.client.tsx)
