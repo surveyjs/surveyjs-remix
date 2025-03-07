@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
 import { data, json } from "../../data/dashboard_data";
-import SurveyAnalytics from "survey-analytics";
+import { VisualizationPanel } from "survey-analytics";
 import "survey-analytics/survey.analytics.css";
-import SurveyCore from "survey-core";
-
-const { Model } = SurveyCore;
-const { VisualizationPanel } = SurveyAnalytics;
+import { Model } from "survey-core";
 
 export default function Dashboard() {
-  let [vizPanel, setVizPanel] = useState<any>();
+  let [vizPanel, setVizPanel] = useState<VisualizationPanel>();
 
   if (!vizPanel) {
     const survey = new Model(json);

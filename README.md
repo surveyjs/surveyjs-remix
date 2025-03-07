@@ -33,9 +33,6 @@ This template covers most basic use cases. You can find code examples for them i
   - As charts
     - [data/dashboard_data.js](data/dashboard_data.js)
     - [app/components/Dashboard.client.tsx](app/components/Dashboard.client.tsx)
-  - As a table (modern browsers)
+  - As a table
     - [data/dashboard_data.js](data/dashboard_data.js)
     - [app/components/DashboardTabulator.client.tsx](app/components/DashboardTabulator.client.tsx)
-  - As a table (old browsers)
-    - [data/dashboard_data.js](data/dashboard_data.js)
-    - [app/components/DashboardDatatables.client.tsx](app/components/DashboardDatatables.client.tsx)

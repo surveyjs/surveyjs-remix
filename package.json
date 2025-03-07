@@ -26,6 +26,7 @@
     "survey-creator-react": "latest",
     "survey-pdf": "latest",
     "survey-react-ui": "latest",
+    "ace-builds": "latest",
     "tailwindcss": "^3.3.0"
   },
   "devDependencies": {

@@ -1,11 +1,8 @@
 import { MetaFunction } from "@remix-run/node";
 // https://stackblitz.com/edit/remix-run-remix-dbe16z?file=app%2Froutes%2F_index.tsx
 import { json } from "../../data/survey_json.js";
-import SurveyCore from "survey-core";
-import SurveyPdf from "survey-pdf";
-
-const { Model } = SurveyCore;
-const { SurveyPDF } = SurveyPdf;
+import { Model } from "survey-core";
+import { SurveyPDF } from "survey-pdf";
 
 export const meta: MetaFunction = () => {
   return [
@@ -18,7 +15,7 @@ function savePDF(model: Model) {
   const surveyPDF = new SurveyPDF(json);
   surveyPDF.data = model.data;
   surveyPDF.save();
-};
+}
 
 export default function Survey() {
   const model = new Model(json);
