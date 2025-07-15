@@ -10,7 +10,7 @@ SurveyJS is a set of JavaScript components that allow you and your users to buil
 ## Run the application
 
 ```bash
-git clone https://github.com/surveyjs/surveyjs-nextjs.git
+git clone https://github.com/surveyjs/surveyjs-remix.git
 cd surveyjs-remix
 npm i
 npm run dev
