@@ -1,20 +1,20 @@
 import { useState } from "react";
 import type { ICreatorOptions } from "survey-creator-core";
-import SurveyCreatorReact from "survey-creator-react";
-import "survey-core/defaultV2.css";
+import { SurveyCreatorComponent, SurveyCreator } from "survey-creator-react";
+import "survey-core/survey-core.css";
 import "survey-creator-core/survey-creator-core.css";
+// Enable Ace Editor in the JSON Editor tab
+import "ace-builds/src-noconflict/ace.js";
+import "ace-builds/src-noconflict/ext-searchbox.js";
 
 import { json as defaultJson } from "../../data/survey_json";
 
-const { SurveyCreatorComponent, SurveyCreator } = SurveyCreatorReact;
-
 const defaultCreatorOptions: ICreatorOptions = {
-  showLogicTab: true,
   showTranslationTab: true
 };
 
 export default function SurveyCreatorWidget(props: { json?: any, options?: ICreatorOptions }) {
-  let [creator, setCreator] = useState<any>();
+  let [creator, setCreator] = useState<SurveyCreator>();
 
   if (!creator) {
     creator = new SurveyCreator(props.options || defaultCreatorOptions);

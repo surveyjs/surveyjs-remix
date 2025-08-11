@@ -2,8 +2,8 @@ import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "SurveyJS + NextJS Quickstart Template" },
+    { name: "description", content: "Welcome to the SurveyJS + NextJS Quickstart Template!" },
   ];
 };
 
@@ -17,10 +17,10 @@ export default function Index() {
             SurveyJS is a set of JavaScript components that allow you and your users to build surveys / forms, store them in your database, and visualize survey results for data analysis. This quick start template uses the following SurveyJS components:
           </p>
           <ul>
-            <li><a style={{ textDecoration: "underline" }} href="https://surveyjs.io/Documentation/Library?id=LibraryOverview" rel="noreferrer" target="_blank">SurveyJS Library / Runner</a></li>
+            <li><a style={{ textDecoration: "underline" }} href="https://surveyjs.io/Documentation/Library?id=LibraryOverview" rel="noreferrer" target="_blank">SurveyJS Form Library</a></li>
             <li><a style={{ textDecoration: "underline" }} href="https://surveyjs.io/Documentation/Survey-Creator?id=Survey-Creator-Overview" rel="noreferrer"target="_blank">Survey Creator / Form Builder</a></li>
-            <li><a style={{ textDecoration: "underline" }} href="https://surveyjs.io/Documentation/Pdf-Export?id=PdfExportOverview" rel="noreferrer" target="_blank">PDF Export</a></li>
-            <li><a style={{ textDecoration: "underline" }} href="https://surveyjs.io/Documentation/Analytics?id=AnalyticsOverview" rel="noreferrer" target="_blank">Survey Analytics</a></li>
+            <li><a style={{ textDecoration: "underline" }} href="https://surveyjs.io/Documentation/Analytics?id=AnalyticsOverview" rel="noreferrer" target="_blank">Dashboard</a></li>
+            <li><a style={{ textDecoration: "underline" }} href="https://surveyjs.io/Documentation/Pdf-Export?id=PdfExportOverview" rel="noreferrer" target="_blank">PDF Generator</a></li>
           </ul>
         </div>
       </div>
