@@ -7,6 +7,8 @@ SurveyJS is a set of JavaScript components that allow you and your users to buil
 - [SurveyJS PDF Generator](https://surveyjs.io/pdf-generator/documentation/overview)
 - [SurveyJS Dashboard](https://surveyjs.io/dashboard/documentation/overview)
 
+Being client-side, SurveyJS components are designed to run in the browser, and server-side rendering is disabled for them.
+
 ## Run the application
 
 ```bash
