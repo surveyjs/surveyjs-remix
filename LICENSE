@@ -1,0 +1,10 @@
+This demo illustrates how to integrate SurveyJS Form Library, Survey Creator, PDF Generator and Dashboard into a Remix application.
+
+SurveyJS Form Library is available under the MIT license.
+
+Survey Creator, PDF Generator and Dashboard are proprietary software. You can integrate these components and evaluate their functionality without a license. Production use requires a commercial license covering the components you use for each developer who works with the SurveyJS APIs or implements the integration.
+
+For full licensing details, please refer to the SurveyJS Licensing FAQ and End-User License Agreement (EULA):
+
+- https://surveyjs.io/faq#licensing
+- https://surveyjs.io/Developer-License-Agreement.pdf
